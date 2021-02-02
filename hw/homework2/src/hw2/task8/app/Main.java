@@ -31,12 +31,12 @@ public class Main {
 
         double x = Double.parseDouble(inputString);
 
-        System.out.println("F(x)=");
+        double result;
         if (x >= 3) {
-            System.out.print(9 - Math.pow(x, 2) + 3 * x);
+            result = 9 - Math.pow(x, 2) + 3 * x;
         } else {
-            System.out.print(1 / (Math.pow(x, 3) - 6));
+            result = 1 / (Math.pow(x, 3) - 6);
         }
-
+        System.out.println("F(x)=" + result);
     }
 }
