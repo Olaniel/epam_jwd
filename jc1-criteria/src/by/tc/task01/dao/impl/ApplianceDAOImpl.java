@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 
 public class ApplianceDAOImpl implements ApplianceDAO {
 
-    File inputFile = new File("resources/appliances_db.txt");
+    File inputFile = new File("resources/appliances_db.txt");// нуда исчели атрибуты доступа?
     Parser parser = new Parser();
 
     @Override
@@ -58,7 +58,7 @@ public class ApplianceDAOImpl implements ApplianceDAO {
 
                 line = bReader.readLine();
             }
-        } catch (IOException e) {
+        } catch (IOException e) {// ошибка кодирования, нельзя гасить исключение будто ничего не случилось - смотри разборы код-ревью, иначе не вытянешь
             System.out.println("Input file reading error");
 
         }
