@@ -2,7 +2,7 @@ package by.tc.task01.entity;
 
 import java.util.Map;
 
-public class Appliance {
+public class Appliance {// абсолютно бессмысленная иерархия классов. Мы на код-ревью разбирали такие случаи - смотри занятия, чтобы не делать грубых ошибок программирования
 
     private String type;
 
